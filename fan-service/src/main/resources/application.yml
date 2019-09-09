@@ -1,0 +1,9 @@
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://fan:fan@cluster0-ikxkk.mongodb.net/test
+      database: fan-service
+
+server:
+  port: 8082

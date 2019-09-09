@@ -1,0 +1,23 @@
+
+spring:
+  rabbitmq:
+    host: rabbitmq
+    port: 5672
+    username: guest
+    password: guest
+  data:
+    mongodb:
+      uri: mongodb+srv://campaign:campaign@cluster0-ikxkk.mongodb.net/test
+      database: campaign
+
+
+  cloud:
+    stream:
+      bindings:
+        output:
+          destination: campaign-bind-retry
+          contentType: application/json
+        input:
+          destination: campaign-bind-retry
+server:
+  port: 8081
